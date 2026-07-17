@@ -8,7 +8,6 @@ import {
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-// Services Data
 const services = [
   {
     icon: <MdEmail />,
