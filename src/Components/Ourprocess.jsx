@@ -59,12 +59,11 @@ const OurProcess = () => {
         </h2>
 
         <div className="process-wrapper">
-          {/* Dashed line handled dynamically in CSS */}
+       
           <div className="process-line"></div>
 
           <div className="row g-4">
             {processSteps.map((item, index) => (
-              /* col-12 on mobile (stacked), col-md-4 on tablets, col-lg on desktop (equal horizontal) */
               <div className="col-lg col-md-4 col-12" key={index}>
                 <div className="process-card">
                   <div

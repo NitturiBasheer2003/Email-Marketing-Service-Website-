@@ -16,7 +16,6 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-top">
-
           {/* Company */}
           <div className="footer-column">
             <div className="footer-logo">
@@ -29,24 +28,45 @@ const Footer = () => {
               through high-converting email marketing campaigns and automation.
             </p>
 
-            <div className="social-icons">
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaTwitter /></a>
-              <a href="#"><FaLinkedinIn /></a>
-              <a href="#"><FaInstagram /></a>
-            </div>
+            <button className="social-icon">
+              <FaFacebookF />
+            </button>
+
+            <button className="social-icon">
+              <FaTwitter />
+            </button>
+
+            <button className="social-icon">
+              <FaLinkedinIn />
+            </button>
+
+            <button className="social-icon">
+              <FaInstagram />
+            </button>
           </div>
 
           {/* Quick Links */}
           <div className="footer-column">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/pricing">Pricing</a></li>
-              <li><a href="/testimonials">Testimonials</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/about">About Us</a>
+              </li>
+              <li>
+                <a href="/services">Services</a>
+              </li>
+              <li>
+                <a href="/pricing">Pricing</a>
+              </li>
+              <li>
+                <a href="/testimonials">Testimonials</a>
+              </li>
+              <li>
+                <a href="/contact">Contact</a>
+              </li>
             </ul>
           </div>
 
@@ -87,7 +107,6 @@ const Footer = () => {
               <span>Mon - Fri : 9:00 AM - 6:00 PM</span>
             </div>
           </div>
-
         </div>
 
         <div className="footer-bottom">

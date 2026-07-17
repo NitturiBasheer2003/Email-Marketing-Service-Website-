@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import logo from "../Assests/Email-logo.webp";
 import ConsultationModal from "../Components/Consultationmodal";
 
@@ -10,21 +11,29 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       <header className="header">
-
-        {/* Logo */}
-        <a href="/" className="logo-container">
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          offset={-80}
+          className="logo-container"
+          onClick={closeMenu}
+        >
           <img
             src={logo}
             alt="MailBoost Logo"
             className="logo-icon"
           />
           <span className="logo-text">MailBoost</span>
-        </a>
+        </Link>
 
-        {/* Mobile Menu Button */}
         <button
           className={`hamburger ${isMenuOpen ? "active" : ""}`}
           onClick={toggleMenu}
@@ -35,50 +44,105 @@ const Header = () => {
           <span className="bar"></span>
         </button>
 
-        {/* Navigation */}
         <div className={`nav-wrapper ${isMenuOpen ? "active" : ""}`}>
 
           <nav className="nav-menu">
 
-            <a href="/" className="nav-link">
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="nav-link"
+              onClick={closeMenu}
+            >
               Home
-            </a>
+            </Link>
 
-            <a href="/about" className="nav-link">
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="nav-link"
+              onClick={closeMenu}
+            >
               About
-            </a>
+            </Link>
 
-            <a href="/services" className="nav-link">
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="nav-link"
+              onClick={closeMenu}
+            >
               Services
-            </a>
+            </Link>
 
-            <a href="/why-choose-us" className="nav-link">
+            <Link
+              to="whychooseus"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="nav-link"
+              onClick={closeMenu}
+            >
               Why Choose Us
-            </a>
+            </Link>
 
-            <a href="/process" className="nav-link">
+            <Link
+              to="process"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="nav-link"
+              onClick={closeMenu}
+            >
               Process
-            </a>
+            </Link>
 
-            <a href="/pricing" className="nav-link">
+            <Link
+              to="pricing"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="nav-link"
+              onClick={closeMenu}
+            >
               Pricing
-            </a>
+            </Link>
 
-            <a href="/testimonials" className="nav-link">
+            <Link
+              to="testimonials"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="nav-link"
+              onClick={closeMenu}
+            >
               Testimonials
-            </a>
+            </Link>
 
-            <a href="/contact" className="nav-link">
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="nav-link"
+              onClick={closeMenu}
+            >
               Contact
-            </a>
+            </Link>
 
           </nav>
-
-          {/* CTA Button */}
-
           <button
             className="cta-button"
-            onClick={() => setShowModal(true)}
+            onClick={() => {
+              setShowModal(true);
+              closeMenu();
+            }}
           >
             Book Free Consultation
           </button>
@@ -87,13 +151,10 @@ const Header = () => {
 
       </header>
 
-      {/* Consultation Popup */}
-
       <ConsultationModal
         show={showModal}
         handleClose={() => setShowModal(false)}
       />
-
     </>
   );
 };
