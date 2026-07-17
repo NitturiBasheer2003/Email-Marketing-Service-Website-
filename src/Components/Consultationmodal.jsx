@@ -10,11 +10,9 @@ const ConsultationModal = ({ show, handleClose }) => {
         <button className="close-btn" onClick={handleClose}>
           <FaTimes />
         </button>
-
         <div className="contact-form">
           <form>
             <h2 className="modal-title">Book Free Consultation</h2>
-
             <div className="row mt-4">
               <div className="col-lg-6 mb-3">
                 <label>Name</label>
@@ -24,7 +22,6 @@ const ConsultationModal = ({ show, handleClose }) => {
                   placeholder="Your Name"
                 />
               </div>
-
               <div className="col-lg-6 mb-3">
                 <label>Email</label>
                 <input
@@ -78,7 +75,6 @@ const ConsultationModal = ({ show, handleClose }) => {
                   placeholder="Tell us about your business..."
                 ></textarea>
               </div>
-
               <div className="col-lg-12">
                 <button className="submit-btn">
                   Submit & Book Free Call

@@ -4,13 +4,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 55vh;
+  margin-top: 110px;
 }
 .HomeBanner-Heading h1 {
-  font-family: 'Poppins', sans-serif; /* Example font from design */
+  font-family: 'Poppins', sans-serif; 
   font-size: 48px;
   font-weight: 700;
   line-height: 1.4;
-  color: #0b1c3f; /* Dark blue from text */
+  color: #0b1c3f; 
   margin: 0;
   padding-left: 50px;
 }
@@ -19,12 +20,11 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
-  color: #5a6473; /* Dark gray from subheading */
+  color: #5a6473; 
   max-width: 90%;
   padding-left: 50px;
 }
 
-/* Action Buttons */
 .HomeBanner-Actions {
   display: flex;
   gap: 20px;
@@ -33,7 +33,7 @@
 }
 
 .Homebutton-primary {
-  background-color: #1a5cff; /* Vivid blue from design */
+  background-color: #1a5cff; 
   color: white;
   border: none;
   padding: 15px 30px;
@@ -47,8 +47,8 @@
 }
 .Homebutton-secondary {
   background-color: transparent;
-  color: #ff854a; /* Precise orange from design */
-  border: 2px solid #ff854a; /* Matched border */
+  color: #ff854a; 
+  border: 2px solid #ff854a; 
   padding: 15px 30px;
   font-size: 16px;
   font-weight: 600;
@@ -60,7 +60,6 @@
 }
 .Aboutus-image img {
   width: 100%;
-  /* height: auto; */
   display: block;
   overflow: hidden;
   height: 50vh;
@@ -299,12 +298,10 @@
     margin-bottom:70px;
 }
 
-/* Wrapper */
 .process-wrapper{
     position:relative;
 }
 
-/* Dashed Line */
 .process-line{
     position:absolute;
     top:67px;
@@ -314,14 +311,12 @@
     z-index:1;
 }
 
-/* Card */
 .process-card{
     position:relative;
     text-align:center;
     z-index:2;
 }
 
-/* Icon Circle */
 .process-icon{
     width:90px;
     height:90px;
@@ -340,7 +335,6 @@
     font-size:34px;
 }
 
-/* Step Number */
 .step-number{
     width:34px;
     height:34px;
@@ -359,7 +353,6 @@
     z-index:4;
 }
 
-/* Heading */
 .process-card h4{
     font-size:24px;
     font-weight:700;
@@ -368,7 +361,6 @@
     margin-bottom:15px;
 }
 
-/* Description */
 .process-card p{
     font-size:15px;
     color:#64748B;
@@ -402,8 +394,6 @@
     color:#64748B;
     line-height:1.8;
 }
-
-/* Blue Statistics Bar */
 
 .stats-bar{
     background:linear-gradient(90deg,#0A2F8F,#143D9B);
@@ -574,9 +564,6 @@
     color:#64748B;
     line-height:1.8;
 }
-
-/* Card */
-
 .pricing-card{
     position:relative;
     background:#fff;
@@ -591,9 +578,6 @@
 .pricing-card:hover{
     transform:translateY(-8px);
 }
-
-/* Badge */
-
 .popular-badge{
     position:absolute;
     top:-2px;
@@ -607,39 +591,28 @@
     border-radius:0 0 15px 15px;
     letter-spacing:.5px;
 }
-
-/* Plan */
-
 .pricing-card h3{
     color:#2563EB;
     font-size:34px;
     font-weight:700;
     margin-bottom:20px;
 }
-
-/* Price */
-
 .price{
     font-size:54px;
     font-weight:700;
     color:#0F172A;
     margin-bottom:30px;
 }
-
 .price span{
     font-size:22px;
     color:#555;
     margin-left:5px;
 }
-
-/* List */
-
 .pricing-card ul{
     list-style:none;
     padding:0;
     margin:0 0 35px;
 }
-
 .pricing-card ul li{
     display:flex;
     align-items:center;
@@ -653,9 +626,6 @@
     color:#0B3B91;
     font-size:18px;
 }
-
-/* Button */
-
 .pricing-btn{
     width:100%;
     border:none;
@@ -671,22 +641,14 @@
 .pricing-btn:hover{
     background:#1D4ED8;
 }
-
-/*=========================
- Contact Section
-==========================*/
-
 .contact-section{
     padding:90px 0;
     background:#F8FAFC;
 }
 
-/* Left Side */
-
 .contact-info{
     padding-right:30px;
 }
-
 .contact-subtitle{
     color:#2563EB;
     font-size:15px;
@@ -735,16 +697,12 @@
     margin:0;
     line-height:1.7;
 }
-
-/* Right Form */
-
 .contact-form{
     background:#fff;
     padding:35px;
     border-radius:18px;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
-
 .contact-form label{
     font-size:15px;
     font-weight:600;
@@ -789,15 +747,10 @@
 .submit-btn:hover{
     background:#F15A24;
 }
-/*==========================
-    CTA SECTION
-===========================*/
-
 .cta-section{
     padding:80px 0;
     background:#ffffff;
 }
-
 .cta-wrapper{
     background:linear-gradient(90deg,#2563EB,#0F52D6);
     border-radius:20px;
@@ -817,9 +770,6 @@
     line-height:1.7;
     margin:0;
 }
-
-/* Proposal Button */
-
 .proposal-btn{
     background:#FF6B35;
     color:#fff;
@@ -838,38 +788,25 @@
     box-shadow:0 15px 30px rgba(255,107,53,.45);
 }
 
-/*==========================
-      Responsive
-===========================*/
-
-/* Mobile Responsive */
-
-/* =========================================
-   Mobile Responsiveness (Tablets & Phones)
-   ========================================= */
 
 @media screen and (max-width: 768px) {
-  /* Allow the banner to grow with stacked content instead of a fixed 55vh */
   .HomeBanner-image {
     height: auto;
     padding-top: 20px;
-    background-position: left center; /* Keeps focal point visible */
+    background-position: left center; 
   }
 
-  /* Reduce font size and padding for smaller screens */
   .HomeBanner-Heading h1 {
     font-size: 32px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  /* Hide hardcoded line breaks on mobile to allow natural text wrapping */
   .HomeBanner-Heading h1 br,
   .HomeBanner-SubHeading br {
     display: none;
   }
 
-  /* Adjust subheading size and padding */
   .HomeBanner-SubHeading {
     font-size: 16px;
     max-width: 100%;
@@ -878,7 +815,6 @@
     margin-top: 15px;
   }
 
-  /* Stack buttons vertically and give them full width */
   .HomeBanner-Actions {
     flex-direction: column;
     padding-left: 20px;
@@ -890,7 +826,7 @@
   .Homebutton-primary,
   .Homebutton-secondary {
     width: 100%;
-    justify-content: center; /* Centers the text inside the full-width button */
+    justify-content: center; 
   }
   .about-card{
     display: none;
