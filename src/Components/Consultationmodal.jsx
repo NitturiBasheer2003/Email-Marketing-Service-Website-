@@ -65,7 +65,7 @@ const ConsultationModal = ({ show, handleClose }) => {
                   <option>Education</option>
                   <option>Real Estate</option>
                   <option>Marketing Agency</option>
-                  <option>Other</option>
+                  <option>Others</option>
                 </select>
               </div>
 
